@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        h1{
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.397);;
+        }
+        nav{
+            background-color: rgb(77, 75, 75);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.397);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        nav >a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px ;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+        article{
+            background-color: lightgray;
+            padding: 25px;
+        }
+
+        article > aside{
+            background-color: rgb(128, 128, 128);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Meu Site</h1>
+         <nav>
+            <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/">link</a>
+            <a href="https://emojipedia.org/">link </a>
+            <a href="https://git-scm.com/download/win">link</a>
+            <a href="https://chrome.google.com/webstore?hl=pt-BR">link</a>
+            <a href="https://github.com/gustavoguanabara/html-css/tree/master">link</a>
+
+         </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <h1>Esportes, Politica e Tecnologia</h1>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias Sobre o Brasil</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quo ea omnis tempore cupiditate libero deserunt perferendis laudantium quae voluptates. Repellendus, error atque. Velit nobis quae, repellat esse illo sapiente.</p>
+                <aside>
+                    <p>escrito por Jozé da silva</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>desenvolvido pelo Desenvolvedor web Renato Lorenzo Vicente</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html

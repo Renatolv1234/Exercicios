@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTMl5</title>
+</head>
+<body>
+    <h1> Imagem Dinâmica </h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem P" type="image/png">
+
+       <source media="(max-width: 1050px )" srcset="imagens/imagem M.png" type="image/png">
+       
+       <img src="imagens/imagem G.png" alt="imagem G">
+    </picture>
+    
+    <h1>Reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios</p>
+    
+    <audio src="media/desert drive - everet almond.mp3" controls autoplay> esse é o audio </audio>
+
+    <audio preload="auto" autoplay controls loop>
+            
+        <source src="media/desert drive - everet almond.mp3" type="audio/mpeg"> 
+            <source src="midia/guanabaracast-33.ogg" type="audio/ogg">
+            <source src="midia/guanabara-33.wav" type="audio/wav">
+            <p>infelizmente seu navegador não consegue reproduzir audio <a href="media/running it down - everet almond.mp3">clique aqui para baixar arquivo MP3</a></p>
+    
+    </audio>
+    
+</body>
+</html>
