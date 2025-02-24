@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">nome</label>
+            <input type="text" name="iname" id="iname" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="imedia" id="imedia" required placeholder="0 a 10" autocomplete="number" value="5" min="0" max="10" step="0.1">
+            <!--Input do tipo number server para informar numeris no campo (Não ultiliza min-maxlength, ultiliza apenas max-min)
+            
+            step é para indentificar de quanto em quanto numero ele vai contar-->
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="imes" id="imes" required value="2020-07">
+            <!--Input do tipo month server para informar meses no campo-->
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia"  id="idia" required value="2025-02-24">
+            <!--Input do tipo date server para informar datas completas no campo-->
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora" required value="19:23">
+            <!--Input do tipo time server para informar tempo no campo-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+
+            <input type="reset" value="Limpar">
+
+        </p>
+    </form>
+</body>
+</html>
