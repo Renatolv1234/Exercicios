@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+             
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas" checked>Masculino</label><br>
+
+            <input type="radio" name="sexo" id="ifem" value="formulário"><label for="ifem">Feminino</label><br>
+        </fieldset>
+        <!--input do tipo "radio" serve para botar caixas de alternativas porem para exemplos como sexo
+        
+        value serve para deixar um valor no input depois que enviar
+
+        !!Sempre deixar com o mesmo name para funcionar corretamente!!
+        
+        Checked serve para ja deixar marcado a opção(em radio pode botar em apenas um input!!)-->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut" checked> Futebol </label><br>
+            
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Vôlei </label><br>
+            
+            <input type="checkbox" name="ten" id="iten"><label for="iten"> Tênis </label><br>
+        </fieldset>
+        <!--input do tipo "checkbox" serve para botar caixas de alternativas
+        
+        !!Sempre colocar num label para ficar mais facil para o usuario responder!!
+        
+        Checked serve para ja deixar marcado a opção-->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
