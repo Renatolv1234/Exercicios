@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    
+                    <option value="MG">Minas Gerais</option>
+                    
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+
+                    <option value="RS">Rio grande do sul</option>
+                    
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+            <!--"select" serve para botar uma lista de opções para o usuario para botar essas opções é necessario um "option" dentro do "select" , usado para solicitar estado, cidade e etc.
+            tem como agrupar usando "optgroup" ultilizando "label" como atributo para descrever o grupo.
+            caso queira deixar uma opção marcada ultilizamos "selected" como atributo no "option"
+            !Não necessita de um input para funcionar!
+            -->
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                
+                <option value="Prog">Programador</option>
+                
+                <option value="Cont">Contabilidade</option>
+
+                <option value="Profe">Professor</option>
+
+                <option value="Dev">Desenvolvedor Web</option>
+            </datalist>
+            <!--"datalist" funciona quase igual ao "select" porem para funcionar precisamos botar um "id" nele e botar esse "id" dentro de um atributo chamado "list" que é colocado no "input" 
+            !Necessita de um input para funcionar-->
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+
+            </textarea>
+            <!--"textarea" cria uma área onde o usuario pode colocar um texto, como exemplo uma mensagem.
+            !Não necessita de input para funcionar!
+
+            !!para melhor funcionamento usar o metodo post no form!!
+            -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
