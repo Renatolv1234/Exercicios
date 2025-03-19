@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output no Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Número :</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output name="val" id="ival">5</output>
+            <!--a tag "output" pode ser usada para calcular numeros e exibir para o usuario o resultado.
+            Também pode ser usado para exibir o resultado de satsfação tipo de 0 a 10.
+            !Não mostra o resultado na URL!
+            !!Para funcionar é presiso usar a tag "oninput" no input!!
+            (Mais exemplos no form010.html)-->
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
